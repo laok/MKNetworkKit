@@ -31,6 +31,9 @@ typedef enum {
   MKNetworkOperationStateFinished = 3
 } MKNetworkOperationState;
 
+typedef void (^MKNKJsonResponseBlock)(NSDictionary* responseData);
+typedef void (^MKNKJsonErrorBlock)(NSDictionary* responseData, NSError* error);
+
 typedef void (^MKNKVoidBlock)(void);
 typedef void (^MKNKIDBlock)(void);
 typedef void (^MKNKProgressBlock)(double progress);
